@@ -5,7 +5,7 @@
 
 void test_barometer() {
   Adafruit_BMP280 barometer = Adafruit_BMP280(&Wire);       // Initialise barometer library object
-  TEST_ASSERT_TRUE(barometer.begin());                      // Connect to barometer
+  TEST_ASSERT_TRUE(barometer.begin(0x76));                      // Connect to barometer
 }
 
 void setup() {
